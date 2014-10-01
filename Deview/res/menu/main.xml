@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+       <item
+           android:id="@+id/action_myschedule"
+           android:title="@string/menu_myschedule"
+             android:icon="@drawable/ic_launcher"
+             android:visible="true"
+            />
+       <item
+           android:id="@+id/action_memo"
+           android:title="@string/menu_viewmenu"
+             android:icon="@drawable/ic_launcher"
+             android:visible="true"
+            
+           />
+
+</menu>

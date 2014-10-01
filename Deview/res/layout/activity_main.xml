@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+    android:id="@+id/titleText"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#359CFB">
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_deview2014_pc"
+        android:layout_gravity="center_vertical|center_horizontal" />
+  		<Button
+        android:id="@+id/mainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="5dp"
+        android:text="+메뉴"
+        android:textColor="#ffffff"
+        android:background="@drawable/menu_bg"
+        android:layout_gravity="center_vertical|right"  />
+   </FrameLayout>
+    
+    
+    <LinearLayout android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	 android:orientation="horizontal"
+    	 android:background="#359CFB">
+    <Button
+        android:id="@+id/day1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAY 1(9.29)"
+        android:textColor="@drawable/sel_day_button_text"
+       	style="@style/dayTextStyle"
+       	 android:background="#359CFB"
+        android:layout_weight="0.5" />
+    <Button
+        android:id="@+id/day2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DAY 2(9.30)"
+        android:textColor="@drawable/sel_day_button_text"
+        style="@style/dayTextStyle"
+         android:background="#359CFB"
+        android:layout_weight="0.5" />
+    </LinearLayout>
+
+
+  
+    <android.support.v4.view.ViewPager
+    android:id="@+id/pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     	<android.support.v4.view.PagerTitleStrip
+     	    android:id="@+id/pager_title_strip"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingTop="4dp"
+		    android:paddingBottom="4dp"
+		    style="@style/PagerTitleStrip"
+		    
+		    android:background="#359CFB">
+     	</android.support.v4.view.PagerTitleStrip>
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
+
+
